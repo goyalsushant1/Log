@@ -1,0 +1,17 @@
+logger_test.route:
+  path: '/logger-entry'
+  defaults:
+    _controller: '\Drupal\logger_test\Controller\LoggerTestController::logentry'
+    _title: 'Log Entry'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+logger_test.factory:
+  path: '/logger-factory'
+  defaults:
+    _controller: '\Drupal\logger_test\Controller\LoggerTestController::loggerFactory'
+    _title: 'Logger Factory Implementation'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'

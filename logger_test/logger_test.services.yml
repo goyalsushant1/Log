@@ -1,0 +1,4 @@
+services:
+  logger_test.custom_logger:
+    class: Drupal\logger_test\LoggerTest
+    arguments: ['@logger.factory']

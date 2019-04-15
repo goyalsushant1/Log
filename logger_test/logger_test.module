@@ -1,0 +1,7 @@
+<?php
+
+// This hook runs when the module is uninstalled
+function logger_test_uninstall()
+{
+    \Drupal::logger('Node Updates')->notice('The module is successfully uninstalled');
+}

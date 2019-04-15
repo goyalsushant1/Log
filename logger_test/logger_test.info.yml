@@ -1,0 +1,5 @@
+name: Logger Module
+description: This module is build to check the logger functionality of drupal 8
+package: Bootcamp
+core: 8.x
+type: module
